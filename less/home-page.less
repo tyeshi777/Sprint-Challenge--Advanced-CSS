@@ -19,25 +19,11 @@
     flex-wrap: wrap;
     width: 100%;
 
-    .blast {
-      animation: pulse 3s infinite;
-    }
-
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
-  @keyframes pulse {
-    0% {
-      background-color: pink;
-      color: white;
-    }
-    100% {
-      background-color: grey;
-      color: yellow;
     }
   }
 
@@ -101,17 +87,21 @@
     }
 
     .heading {
+      max-width: 480px;
+      width: 100%;
+      margin-left: 8px;
+
       h1 {
-        font-size: 3rem;
+        font-size: 4rem;
       }
       nav {
-        margin: 10px 0;
+        margin: 20px 0;
       }
       nav a {
         text-decoration: none;
         margin-left: 20px;
         color: @ebony-clay;
-        font-size: 1rem;
+        font-size: 2rem;
         font-family: @nav-font;
         &:hover {
           color: red;
@@ -191,6 +181,7 @@
           color: red;
           background: @waterloo;
           cursor: pointer;
+          transition: 2s ease-in-out;
         }
       }
 
