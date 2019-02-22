@@ -1,1 +1,31 @@
 // Mixins Here
+
+.custom-display(@align) {
+  display: flex;
+  flex-direction: column;
+  align-items: @align;
+}
+
+.button-custom(@bg-color:red, @radius) {
+  padding: 8px 5px;
+  background-color: @river-bend;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  border-radius: @radius;
+  &:hover {
+    color: red;
+    background: @waterloo;
+    cursor: pointer;
+  }
+}
+
+.btn {
+  max-width: 100px;
+  .button-custom(@bg-color, 5px);
+}
+
+.footer {
+  background: @footer-background;
+  color: @footer-font-color;
+}
