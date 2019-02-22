@@ -1,0 +1,422 @@
+.btn {
+  max-width: 100px;
+  padding: 8px 5px;
+  background-color: #454a59;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+}
+.btn:hover {
+  color: red;
+  background: #5e6164;
+  cursor: pointer;
+  transition: 2s ease-in-out;
+}
+.footer {
+  background: #f6f6f6;
+  color: #81848e;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.heading {
+  max-width: 800px;
+  width: 100%;
+  opacity: 0.5;
+  padding: 10px;
+  position: fixed;
+  height: 130px;
+  animation: pulse 3s infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f6f6;
+}
+.heading h1 {
+  font-size: 5rem;
+}
+.heading nav {
+  margin: 20px 0;
+}
+.heading nav a {
+  text-decoration: none;
+  margin-left: 40px;
+  color: #23293b;
+  font-size: 2rem;
+  font-family: #454a59;
+}
+.heading nav a:hover {
+  color: red;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 2s ease-in-out;
+}
+@keyframes pulse {
+  0% {
+    background-color: #f23163;
+    color: white;
+  }
+  100% {
+    background-color: grey;
+    color: yellow;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  position: relative;
+}
+.home .intro {
+  padding-top: 130px;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.home .walk .input input {
+  padding: 15px 120px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 2rem;
+  background: #f1f1f1;
+  color: #23293b;
+  text-align: center;
+  padding: 5px 20px;
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+  transform: rotate(40deg);
+  animation: rotate 0.8s infinite linear;
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+}
+@media (max-width: 500px) {
+  .home h2 {
+    font-size: 2.2rem;
+  }
+  .home h3 {
+    font-size: 1.8rem;
+  }
+  .home .heading {
+    max-width: 480px;
+    width: 100%;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f6f6f6;
+  }
+  .home .heading h1 {
+    font-size: 4rem;
+  }
+  .home .heading nav {
+    margin: 20px 0;
+  }
+  .home .heading nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #23293b;
+    font-size: 2rem;
+    font-family: #454a59;
+  }
+  .home .heading nav a:hover {
+    color: red;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .home .intro h2 {
+    padding: 10px;
+  }
+  .home .intro p {
+    padding: 0 10px;
+  }
+  .home .intro .intro-img {
+    padding-left: 10px;
+    max-width: 480px;
+    width: 100%;
+  }
+  .home .space-images {
+    max-width: 460px;
+    display: block;
+    width: 100%;
+  }
+  .home .space-images .blast {
+    display: block;
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .walk {
+    max-width: 480px;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #dee2e6;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .walk .input input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 2rem;
+    background: #f1f1f1;
+    color: #23293b;
+    text-align: center;
+    padding: 15px 120px;
+  }
+  .home .walk .walk-img {
+    max-width: 260px;
+    width: 100%;
+    order: -1;
+    transform: rotate(40deg);
+    animation: rotate 0.8s infinite linear;
+  }
+  .home .walk .walk-text {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .home .walk .walk-text h3 {
+    margin-bottom: 10px;
+  }
+  .home .walk .walk-text p {
+    margin-bottom: 16px;
+  }
+  .home .walk .btn {
+    max-width: 440px;
+    padding: 15px 25px;
+    background-color: #454a59;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .home .walk .btn:hover {
+    color: red;
+    background: #81848e;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+  }
+}

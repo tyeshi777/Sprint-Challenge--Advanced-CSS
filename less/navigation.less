@@ -1,1 +1,42 @@
 // Navigation code here
+.heading {
+  max-width: 800px;
+  width: 100%;
+  opacity: 0.5;
+  padding: 10px;
+  position: fixed;
+  height: 130px;
+  animation: pulse 3s infinite;
+
+  h1 {
+    font-size: 5rem;
+  }
+  nav {
+    margin: 20px 0;
+  }
+  nav a {
+    text-decoration: none;
+    margin-left: 40px;
+    color: @ebony-clay;
+    font-size: 2rem;
+    font-family: @nav-font;
+    &:hover {
+      color: red;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 2s ease-in-out;
+    }
+  }
+  .custom-display(center);
+  background: @nav-bg;
+}
+@keyframes pulse {
+  0% {
+    background-color: @amarnath;
+    color: white;
+  }
+  100% {
+    background-color: grey;
+    color: yellow;
+  }
+}
