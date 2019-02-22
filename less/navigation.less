@@ -6,6 +6,7 @@
   padding: 10px;
   position: fixed;
   height: 130px;
+  animation: pulse 3s infinite;
 
   h1 {
     font-size: 5rem;
@@ -27,4 +28,14 @@
   }
   .custom-display(center);
   background: @nav-bg;
+}
+@keyframes pulse {
+  0% {
+    background-color: pink;
+    color: white;
+  }
+  100% {
+    background-color: grey;
+    color: yellow;
+  }
 }
