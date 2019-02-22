@@ -1,5 +1,12 @@
 // Navigation code here
 .heading {
+  max-width: 800px;
+  width: 100%;
+  opacity: 0.5;
+  padding: 10px;
+  position: fixed;
+  height: 130px;
+
   h1 {
     font-size: 5rem;
   }
@@ -12,6 +19,11 @@
     color: @ebony-clay;
     font-size: 2rem;
     font-family: @nav-font;
+    &:hover {
+      color: red;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
   }
   .custom-display(center);
   background: @nav-bg;

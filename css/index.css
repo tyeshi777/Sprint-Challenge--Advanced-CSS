@@ -9,7 +9,7 @@
 }
 .btn:hover {
   color: red;
-  background: #81848e;
+  background: #5e6164;
   cursor: pointer;
 }
 .footer {
@@ -182,6 +182,12 @@ p {
   margin: 0 auto;
 }
 .heading {
+  max-width: 800px;
+  width: 100%;
+  opacity: 0.5;
+  padding: 10px;
+  position: fixed;
+  height: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,6 +206,11 @@ p {
   font-size: 2rem;
   font-family: #454a59;
 }
+.heading nav a:hover {
+  color: red;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -209,6 +220,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  position: relative;
+}
+.home .intro {
+  padding-top: 130px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -287,6 +304,11 @@ footer {
     font-size: 1rem;
     font-family: #454a59;
   }
+  .home .heading nav a:hover {
+    color: red;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
   .home .intro h2 {
     padding: 10px;
   }
@@ -294,6 +316,7 @@ footer {
     padding: 0 10px;
   }
   .home .intro .intro-img {
+    padding-left: 10px;
     max-width: 480px;
     width: 100%;
   }
